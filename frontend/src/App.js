@@ -2,13 +2,12 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Home from './pages/Home';
 import Login from './components/Login';
 import VerifyCode from './components/VerifyCode';
 import Plans from './components/Plans';
-import Home from './pages/Home';
-import NotFound from './pages/NotFound';
 
-const App = () => {
+function App() {
   return (
     <Router>
       <Navbar />
@@ -17,10 +16,9 @@ const App = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/verify" element={<VerifyCode />} />
         <Route path="/plans" element={<Plans />} />
-        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;
