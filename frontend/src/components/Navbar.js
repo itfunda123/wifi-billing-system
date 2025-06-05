@@ -6,7 +6,7 @@ import { FaHome, FaSignInAlt, FaBoxOpen } from 'react-icons/fa'; // import icons
 const Navbar = () => (
   <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
     <div className="container">
-      <Link className="navbar-brand" to="/">WiFi Billing</Link>
+      <Link className="navbar-brand" to="/">WiFi Billing System</Link>
       
       <div className="collapse navbar-collapse">
         <ul className="navbar-nav ms-auto">
