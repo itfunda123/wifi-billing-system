@@ -2,21 +2,17 @@ import React from "react";
 
 function Home() {
   return (
-    <div className="container mt-5 text-center">
-      <div className="p-5 mb-4 bg-light rounded-3 shadow">
-        <div className="container-fluid py-5">
-          <h1 className="display-5 fw-bold text-primary">Welcome to SmartWiFi Billing System</h1>
-          <p className="fs-4">
-            Effortlessly manage your internet usage, track your bills, and make payments in seconds.
-          </p>
-          <p className="fs-5 text-muted">
-            Stay connected. Stay in control.
-          </p>
-          <a href="/plans" className="btn btn-primary btn-lg mt-3">
-            View Plans & Billing
-          </a>
-        </div>
-      </div>
+    <div className="container text-center my-5">
+      <h1 className="fw-bold text-dark mb-3">SmartWiFi Billing System</h1>
+      <p className="lead text-secondary">
+        Simple. Secure. Seamless internet billing for your home or business.
+      </p>
+      <p className="text-muted">
+        Track your usage, pay bills instantly, and stay connected without the hassle.
+      </p>
+      <a href="/plans" className="btn btn-outline-primary mt-4 px-4 py-2">
+        Explore Plans & Billing
+      </a>
     </div>
   );
 }
