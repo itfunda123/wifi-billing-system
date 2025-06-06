@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.home-font {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Fade-in animation for heading */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Pop animation for button */
+@keyframes pop {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.animate-pop {
+  animation: pop 0.6s ease-in-out;
+}
+
