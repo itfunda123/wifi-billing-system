@@ -1,11 +1,19 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaSignInAlt, FaBoxOpen } from 'react-icons/fa';
+import wifiIcon from '../Assets/wifi-icon.jpg';
 
 const Navbar = () => (
   <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
     <div className="container">
-      <Link className="navbar-brand" to="/">WiFi Billing System</Link>
+      <Link className="navbar-brand d-flex align-items-center" to="/">
+        <img
+          src={wifiIcon}
+          alt="WiFi Logo"
+          style={{ width: '30px', height: '30px', marginRight: '10px', borderRadius: '50%' }}
+        />
+        WiFi Billing System
+      </Link>
 
       {/* Toggle button for mobile view */}
       <button
